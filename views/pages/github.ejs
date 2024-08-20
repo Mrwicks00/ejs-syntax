@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        section {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        img {
+            border-radius: 100%;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <% data.forEach(person => { %>
+            <p><%= person.id %></p>
+            <p><%= person.login %></p>
+            <img src="<%= person.avatar_url %>" alt="">
+       <% }) %>
+    </section>
+</body>
+</html>
